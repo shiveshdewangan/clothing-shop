@@ -26,7 +26,6 @@ class App extends Component {
               ...snapShot.data()
             }
           });
-          console.log(this.state);
         });
       }
       this.setState({
@@ -44,9 +43,9 @@ class App extends Component {
       <>
         <Header currentUser={this.state.currentUser} />
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/shop" component={ShopPage} />
-          <Route path="/signin" component={SingInAndSignUpPage} />
+          <Route exact path='/' component={HomePage} />
+          <Route path='/shop' component={ShopPage} />
+          <Route path='/signin' component={SingInAndSignUpPage} />
         </Switch>
       </>
     );
