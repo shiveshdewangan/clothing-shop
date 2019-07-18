@@ -3,12 +3,12 @@ import "./custom-button.styles.scss";
 
 const CustomButton = ({ children, isFacebookSignIn, ...otherProps }) => {
   return (
-    <div
+    <button
       className={`${isFacebookSignIn ? "facebook-sign-in" : ""} custom-button`}
       {...otherProps}
     >
       {children}
-    </div>
+    </button>
   );
 };
 
